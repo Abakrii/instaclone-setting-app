@@ -2,6 +2,12 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default class App extends React.Component {
+    constructor(){
+      super(props);
+      this.state = {
+        firstName : "Insta - Clone"
+      };
+    }
   render() {
     return (
       <View style={styles.container}>
@@ -16,6 +22,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
 });
+
